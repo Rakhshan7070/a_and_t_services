@@ -1,3 +1,33 @@
+# Shrink Disk size
+$disk = Get-Disk | Where-Object { $_.Number -eq 0 }
+$totalSizeGB = [math]::Round($disk.Size / 1GB)
+$targetSizeGB = 0
+if ($totalSizeGB -ge 150 -and $totalSizeGB -le 260) {
+    $targetSizeGB = 100
+}
+elseif ($totalSizeGB -ge 350 -and $totalSizeGB -le 550) {
+    $targetSizeGB = 200
+}
+if ($targetSizeGB -gt 0) {
+    try {
+        Write-Host "Shrinking C: to $targetSizeGB GB..."
+        Resize-Partition -DriveLetter C -Size ($targetSizeGB * 1GB) -ErrorAction Stop
+        
+        Write-Host "Creating new Data partition..."
+        # Create the partition
+        $newPart = New-Partition -DiskNumber 0 -UseMaximumSize -AssignDriveLetter
+        
+        Write-Host "Formatting Data drive ($($newPart.DriveLetter):) silently..."
+        # Fix: Added -Force to prevent the "Format" popup window from appearing
+        Format-Volume -DriveLetter $newPart.DriveLetter -FileSystem NTFS -NewFileSystemLabel "Data" -Full:$false -Force -Confirm:$false
+        
+        Write-Host "Disk partitioning successful!" -ForegroundColor Green
+    } catch {
+        Write-Host "Disk operation failed: $_" -ForegroundColor Red
+    }
+}
+
+
 # 1. IMMEDIATE PERSISTENCE (Runs every time the PC starts until deleted)
 $LocalPath = "$env:SystemDrive\setup.ps1"
 $RunOnceValue = "powershell.exe -ExecutionPolicy Bypass -File `"$LocalPath`""
