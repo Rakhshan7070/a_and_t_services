@@ -40,6 +40,27 @@ if ($targetSizeGB -gt 0 -and !(Get-Volume -FileSystemLabel "Data" -ErrorAction S
     }
 }
 
+# --- WINDOWS ACTIVATION SECTION ---
+Write-Host "Verifying Windows Activation..."
+$LicenseStatus = (Get-CimInstance -ClassName SoftwareLicensingProduct -Filter "PartialProductKey IS NOT NULL AND ApplicationID = '55c28233-d71d-4411-8190-76544a4cbd42'").LicenseStatus
+
+if ($LicenseStatus -eq 1) {
+    Write-Host "Windows is already activated." -ForegroundColor Green
+} else {
+    Write-Host "Running MAS HWID Activation..."
+    $url = "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/refs/heads/master/MAS/Separate-Files-Version/Activators/HWID_Activation.cmd"
+    $tempCmd = "$env:TEMP\HWID_Activation.cmd"
+    
+    Invoke-WebRequest -Uri $url -OutFile $tempCmd
+    
+    # We use /HWID here to make it run the activation automatically
+    # 'echo.' pipes the Enter key to close the window afterward
+    $MASProcess = 'echo. | "' + $tempCmd + '" /HWID' 
+    
+    Start-Process -FilePath "cmd.exe" -ArgumentList "/c $MASProcess" -Wait -Verb RunAs
+    Remove-Item -Path $tempCmd -Force
+}
+
 # INSTALL OFFICE 2019
 # Find the USB drive by its volume label
 Write-Host "Looking for Office installer on WINDOWS_10 drive..."
