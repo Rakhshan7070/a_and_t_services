@@ -1,3 +1,15 @@
+# ------------------------------------------------------------------------------
+# 0.5 SCRIPT CREDITS & HEADER
+# ------------------------------------------------------------------------------
+Clear-Host
+Write-Host "===============================================================" -ForegroundColor Cyan
+Write-Host "         AUTOMATED SYSTEM DEPLOYMENT & CONFIGURATION           " -ForegroundColor White
+Write-Host "         Developed by: Rakhshan Ali                            " -ForegroundColor Green
+Write-Host "         Everything is open-source!                            " -ForegroundColor Yellow
+Write-Host "         GitHub: https://github.com/Rakhshan7070/a_and_t_services" -ForegroundColor Cyan
+Write-Host "===============================================================" -ForegroundColor Cyan
+Write-Host ""
+
 # ==============================================================================
 # STAGE 1 - INSTALL SCRIPT
 # Handles: Disk, Software, Activation
@@ -361,10 +373,10 @@ Write-Host "[+] Auto-login disabled." -ForegroundColor Green
 
 # Show completion message to the user
 Add-Type -AssemblyName System.Windows.Forms
-$msg = "Setup Complete!`n`nAll Windows Updates have been installed successfully.`nThis machine is ready for use."
+$msg = "System Setup Complete!`n`nAll Windows Updates have been installed successfully.`nThis machine is fully configured and ready for use.`n`nDeveloped by: Rakhshan Ali`nEverything is open-source!`nGitHub: https://github.com/Rakhshan7070/a_and_t_services"
 [System.Windows.Forms.MessageBox]::Show(
     $msg,
-    "IT Setup - Complete",
+    "IT Deployment - Complete",
     [System.Windows.Forms.MessageBoxButtons]::OK,
     [System.Windows.Forms.MessageBoxIcon]::Information
 ) | Out-Null
