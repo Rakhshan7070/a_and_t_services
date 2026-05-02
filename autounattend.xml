@@ -548,6 +548,30 @@ if ($usbDrive) {
 }
 
 # ------------------------------------------------------------------------------
+# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP
+# ------------------------------------------------------------------------------
+$desktopPath = "$env:PUBLIC\Desktop"
+$assetName   = if ($usbLabel -eq "WINDOWS_11") { "win_11" } else { "win_10" }
+$assetSource = Join-Path $usb $assetName
+$assetDest   = Join-Path $desktopPath $assetName
+
+if (Test-Path $assetSource) {
+    Write-Host "[*] Copying $assetName to Desktop..." -ForegroundColor Cyan
+    
+    # Perform the copy
+    Copy-Item -Path $assetSource -Destination $desktopPath -Recurse -Force
+    
+    # Confirmation Check
+    if (Test-Path $assetDest) {
+        Write-Host "[+] VERIFIED: $assetName was successfully copied to the Desktop." -ForegroundColor Green
+    } else {
+        Write-Host "[!] ERROR: Copy command ran, but $assetName is missing from the Desktop!" -ForegroundColor Red
+    }
+} else {
+    Write-Host "[!] $assetName folder not found on the USB drive. Skipping." -ForegroundColor Yellow
+}
+
+# ------------------------------------------------------------------------------
 # 4. INSTALL CHROME
 # ------------------------------------------------------------------------------
 $chrome = Join-Path $usb "Chrome\install.exe"
