@@ -86,7 +86,7 @@ if (Test-Path $assetSource) {
 # ------------------------------------------------------------------------------
 # 4. INSTALL CHROME
 # ------------------------------------------------------------------------------
-$chrome = Join-Path $usb "Chrome\install.exe"
+$chrome = "$env:PUBLIC\Desktop\assets\Chrome\install.exe"
 if (Test-Path $chrome) {
     Write-Host "[*] Installing Google Chrome..." -ForegroundColor Cyan
     Start-Process $chrome -ArgumentList "/silent", "/install" -Wait
@@ -95,9 +95,9 @@ if (Test-Path $chrome) {
 # ------------------------------------------------------------------------------
 # 5. INSTALL ADOBE READER
 # ------------------------------------------------------------------------------
-if (Test-Path "$usb\Adobe\install.exe") {
+if (Test-Path "$env:PUBLIC\Desktop\assets\Adobe\install.exe") {
     Write-Host "[*] Installing Adobe Reader silently..." -ForegroundColor Cyan
-    Start-Process "$usb\Adobe\install.exe" `
+    Start-Process "$env:PUBLIC\Desktop\assets\Adobe\install.exe" `
         -ArgumentList "/sAll /rs /msi /norestart /quiet" `
         -Wait
 }
@@ -105,7 +105,7 @@ if (Test-Path "$usb\Adobe\install.exe") {
 # ------------------------------------------------------------------------------
 # 6. INSTALL HD SENTINEL
 # ------------------------------------------------------------------------------
-$hdInstaller = Join-Path $usb "Hdsential\install.exe"
+$hdInstaller = "$env:PUBLIC\Desktop\assets\Hdsential\install.exe"
 if (Test-Path $hdInstaller) {
     Write-Host "[*] Installing HD Sentinel..." -ForegroundColor Cyan
     $proc = Start-Process $hdInstaller -ArgumentList "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/IACCEPTTHEAGREEMENT" -PassThru
@@ -113,42 +113,34 @@ if (Test-Path $hdInstaller) {
 }
 
 # ------------------------------------------------------------------------------
-# 7. COPY & INSTALL OFFICE 2021
+# 7. INSTALL OFFICE 2021
 # ------------------------------------------------------------------------------
-$officeUsbSource   = Join-Path $usb "Office2021"
-$officeDesktopDest = Join-Path $desktopPath "Office2021"
-$officeInstaller   = Join-Path $officeDesktopDest "install.exe"
-
+$officeInstaller = "$env:PUBLIC\Desktop\assets\Office2021\install.exe"
 $wordPath  = "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
 $excelPath = "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE"
 
 if (!(Test-Path $wordPath)) {
-    if (Test-Path $officeUsbSource) {
-        Write-Host "[*] Copying Office 2021 to Desktop..." -ForegroundColor Cyan
-        Copy-Item -Path $officeUsbSource -Destination $desktopPath -Recurse -Force
+    if (Test-Path $officeInstaller) {
+        Write-Host "[*] Installing Microsoft Office 2021 from Desktop assets..." -ForegroundColor Cyan
         
-        if (Test-Path $officeInstaller) {
-            Write-Host "[*] Installing Microsoft Office 2021 from Desktop..." -ForegroundColor Cyan
-            # Launch the installer, but DO NOT forcefully kill the background processes afterwards!
-            Start-Process $officeInstaller -ArgumentList "/quiet", "/norestart"
-        } else {
-            Write-Host "[!] ERROR: Office installer not found on Desktop after copy!" -ForegroundColor Red
-        }
+        # Launching the installer silently
+        Start-Process $officeInstaller -ArgumentList "/quiet", "/norestart"
     } else {
-        Write-Host "[!] ERROR: Office2021 folder not found on USB!" -ForegroundColor Red
+        Write-Host "[!] ERROR: Office installer not found at $officeInstaller" -ForegroundColor Red
     }
 } else {
-    Write-Host "[+] Office is already installed. Skipping copy and install." -ForegroundColor Green
+    Write-Host "[+] Office is already installed. Skipping installation." -ForegroundColor Green
 }
 
 # Office Verification Watchdog (10 min)
+# This stays because the installer returns instantly while files extract in the background
 Write-Host "[*] Searching for Office files (10 min watchdog)..." -ForegroundColor Yellow
 $timer = [System.Diagnostics.Stopwatch]::StartNew()
 $found = $false
 
 while ($timer.Elapsed.TotalMinutes -lt 10) {
     if ((Test-Path $wordPath) -or (Test-Path $excelPath)) {
-        Write-Host "`n[+] Office files found! Proceeding to activation..." -ForegroundColor Green
+        Write-Host "`n[+] Office files detected on disk! Proceeding to activation..." -ForegroundColor Green
         $found = $true
         break
     }
