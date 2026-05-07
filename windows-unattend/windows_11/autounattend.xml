@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&GeoLocation=113&Locale=en-IN&Keyboard=00004009&PEMode=Generated&InstallFromMode=Automatic&PartitionMode=Unattended&TargetDisk=0&PartitionLayout=GPT&EspSize=300&RecoveryMode=Partition&RecoverySize=1000&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&ProcessorArchitecture=x86&ProcessorArchitecture=amd64&ProcessorArchitecture=arm64&ComputerNameMode=Random&TimeZoneMode=Explicit&TimeZone=India+Standard+Time&UserAccountMode=Unattended&AccountName0=admin&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&TaskbarSearch=Box&TaskbarIconsMode=Default&StartTilesMode=Default&StartPinsMode=Default&AllowPowerShellScripts=true&EffectsMode=Default&DesktopIconsMode=Custom&IconRecycleBin=true&IconThisPC=true&StartFoldersMode=Default&WifiMode=FromProfile&WifiProfileXml=%3C%3Fxml+version%3D%221.0%22%3F%3E%0D%0A%3CWLANProfile+xmlns%3D%22http%3A%2F%2Fwww.microsoft.com%2Fnetworking%2FWLAN%2Fprofile%2Fv1%22%3E%0D%0A%09%3Cname%3EWIFI_NAME%3C%2Fname%3E%0D%0A%09%3CSSIDConfig%3E%0D%0A%09%09%3CSSID%3E%0D%0A%09%09%09%3Chex%3E4954204445504152544D454E545F3547%3C%2Fhex%3E%0D%0A%09%09%09%3Cname%3EWIFI_NAME%3C%2Fname%3E%0D%0A%09%09%3C%2FSSID%3E%0D%0A%09%3C%2FSSIDConfig%3E%0D%0A%09%3CconnectionType%3EESS%3C%2FconnectionType%3E%0D%0A%09%3CconnectionMode%3Eauto%3C%2FconnectionMode%3E%0D%0A%09%3CMSM%3E%0D%0A%09%09%3Csecurity%3E%0D%0A%09%09%09%3CauthEncryption%3E%0D%0A%09%09%09%09%3Cauthentication%3EWPA2PSK%3C%2Fauthentication%3E%0D%0A%09%09%09%09%3Cencryption%3EAES%3C%2Fencryption%3E%0D%0A%09%09%09%09%3CuseOneX%3Efalse%3C%2FuseOneX%3E%0D%0A%09%09%09%3C%2FauthEncryption%3E%0D%0A%09%09%09%3CsharedKey%3E%0D%0A%09%09%09%09%3CkeyType%3EpassPhrase%3C%2FkeyType%3E%0D%0A%09%09%09%09%3Cprotected%3Efalse%3C%2Fprotected%3E%0D%0A%09%09%09%09%3CkeyMaterial%3EWIFI_PASSWORD%3C%2FkeyMaterial%3E%0D%0A%09%09%09%3C%2FsharedKey%3E%0D%0A%09%09%3C%2Fsecurity%3E%0D%0A%09%3C%2FMSM%3E%0D%0A%09%3CMacRandomization+xmlns%3D%22http%3A%2F%2Fwww.microsoft.com%2Fnetworking%2FWLAN%2Fprofile%2Fv3%22%3E%0D%0A%09%09%3CenableRandomization%3Efalse%3C%2FenableRandomization%3E%0D%0A%09%09%3CrandomizationSeed%3E133533289%3C%2FrandomizationSeed%3E%0D%0A%09%3C%2FMacRandomization%3E%0D%0A%3C%2FWLANProfile%3E%0D%0A&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Default&ColorMode=Default&WallpaperMode=Default&LockScreenMode=Default&FirstLogonScript0=%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+0.5+SCRIPT+CREDITS+%26+HEADER%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0AClear-Host%0D%0AWrite-Host+%22%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%22+-ForegroundColor+Cyan%0D%0AWrite-Host+%22+++++++++AUTOMATED+SYSTEM+DEPLOYMENT+%26+CONFIGURATION+++++++++++%22+-ForegroundColor+White%0D%0AWrite-Host+%22+++++++++Developed+by%3A+Rakhshan+Ali++++++++++++++++++++++++++++%22+-ForegroundColor+Green%0D%0AWrite-Host+%22+++++++++Everything+is+open-source%21++++++++++++++++++++++++++++%22+-ForegroundColor+Yellow%0D%0AWrite-Host+%22+++++++++GitHub%3A+https%3A%2F%2Fgithub.com%2FRakhshan7070%2Fa_and_t_services%22+-ForegroundColor+Cyan%0D%0AWrite-Host+%22%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%22+-ForegroundColor+Cyan%0D%0AWrite-Host+%22%22%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+STAGE+1+-+INSTALL+SCRIPT%0D%0A%23+Handles%3A+Disk%2C+Software%2C+Activation%0D%0A%23+Ends+by%3A+Writing+Stage2_Update.ps1+to+disk+and+registering+it+in+RunOnce%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+0.+SELF-ELEVATION%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0Aif+%28%21%28%5BSecurity.Principal.WindowsPrincipal%5D%5BSecurity.Principal.WindowsIdentity%5D%3A%3AGetCurrent%28%29%29.IsInRole%28%5BSecurity.Principal.WindowsBuiltInRole%5D%3A%3AAdministrator%29%29+%7B%0D%0A++++Start-Process+powershell.exe+%22-NoProfile+-ExecutionPolicy+Bypass+-File+%60%22%24PSCommandPath%60%22%22+-Verb+RunAs%0D%0A++++exit%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+2.+DISK+PARTITIONING%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24disk+%3D+Get-Disk+%7C+Where-Object+%7B+%24_.Number+-eq+0+%7D%0D%0A%24totalSizeGB+%3D+%5Bmath%5D%3A%3ARound%28%24disk.Size+%2F+1GB%29%0D%0A%24targetSizeGB+%3D+0%0D%0A%0D%0Aif+%28%24totalSizeGB+-ge+150+-and+%24totalSizeGB+-le+260%29+%7B+%0D%0A++++%24targetSizeGB+%3D+100+%0D%0A%7D+elseif+%28%24totalSizeGB+-ge+350+-and+%24totalSizeGB+-le+550%29+%7B+%0D%0A++++%24targetSizeGB+%3D+200+%0D%0A%7D%0D%0A%0D%0Aif+%28%24targetSizeGB+-gt+0+-and+%21%28Get-Volume+-FileSystemLabel+%22Data%22+-ErrorAction+SilentlyContinue%29%29+%7B%0D%0A++++try+%7B%0D%0A++++++++Resize-Partition+-DriveLetter+C+-Size+%28%24targetSizeGB+*+1GB%29+-ErrorAction+Stop%0D%0A++++++++%24newPart+%3D+New-Partition+-DiskNumber+0+-UseMaximumSize+-AssignDriveLetter%0D%0A++++++++Format-Volume+-DriveLetter+%24newPart.DriveLetter+-FileSystem+NTFS+-NewFileSystemLabel+%22Data%22+-Full%3A%24false+-Force+-Confirm%3A%24false%0D%0A++++%7D+catch+%7B+%0D%0A++++++++Write-Host+%22Disk+operation+skipped%3A+%24_%22+-ForegroundColor+Yellow%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+3.+DYNAMIC+USB+DETECTION%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24usbDrive+%3D+Get-WmiObject+Win32_Volume+%7C+Where-Object+%7B+%24_.Label+-eq+%22WINDOWS_11%22+%7D%0D%0Aif+%28%24usbDrive%29+%7B%0D%0A++++%24usb+%3D+%24usbDrive.Name%0D%0A++++Write-Host+%22%5B%2B%5D+Found+USB+Drive+at+%24usb%22+-ForegroundColor+Green%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%5B%21%5D+ERROR%3A+USB+labeled+%27WINDOWS_11%27+not+found%21%22+-ForegroundColor+Red%0D%0A++++Pause%3B+exit%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+3.5+COPY+OS-SPECIFIC+ASSETS+TO+DESKTOP+%28WIN+11+ONLY%29%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24desktopPath+%3D+%22%24env%3APUBLIC%5CDesktop%22%0D%0A%24assetName+++%3D+%22win_11%22%0D%0A%24assetSource+%3D+Join-Path+%24usb+%24assetName%0D%0A%24assetDest+++%3D+Join-Path+%24desktopPath+%24assetName%0D%0A%0D%0Aif+%28Test-Path+%24assetSource%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Copying+%24assetName+to+Desktop...%22+-ForegroundColor+Cyan%0D%0A++++%0D%0A++++%23+Perform+the+copy%0D%0A++++Copy-Item+-Path+%24assetSource+-Destination+%24desktopPath+-Recurse+-Force%0D%0A++++%0D%0A++++%23+Confirmation+Check%0D%0A++++if+%28Test-Path+%24assetDest%29+%7B%0D%0A++++++++Write-Host+%22%5B%2B%5D+VERIFIED%3A+%24assetName+was+successfully+copied+to+the+Desktop.%22+-ForegroundColor+Green%0D%0A++++%7D+else+%7B%0D%0A++++++++Write-Host+%22%5B%21%5D+ERROR%3A+Copy+command+ran%2C+but+%24assetName+is+missing+from+the+Desktop%21%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%5B%21%5D+%24assetName+folder+not+found+on+the+USB+drive.+Skipping.%22+-ForegroundColor+Yellow%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+4.+INSTALL+CHROME%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24chrome+%3D+Join-Path+%24usb+%22Chrome%5Cinstall.exe%22%0D%0Aif+%28Test-Path+%24chrome%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Installing+Google+Chrome...%22+-ForegroundColor+Cyan%0D%0A++++Start-Process+%24chrome+-ArgumentList+%22%2Fsilent%22%2C+%22%2Finstall%22+-Wait%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+5.+INSTALL+ADOBE+READER%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0Aif+%28Test-Path+%22%24usb%5CAdobe%5Cinstall.exe%22%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Installing+Adobe+Reader+silently...%22+-ForegroundColor+Cyan%0D%0A++++Start-Process+%22%24usb%5CAdobe%5Cinstall.exe%22+%60%0D%0A++++++++-ArgumentList+%22%2FsAll+%2Frs+%2Fmsi+%2Fnorestart+%2Fquiet%22+%60%0D%0A++++++++-Wait%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+6.+INSTALL+HD+SENTINEL%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24hdInstaller+%3D+Join-Path+%24usb+%22Hdsential%5Cinstall.exe%22%0D%0Aif+%28Test-Path+%24hdInstaller%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Installing+HD+Sentinel...%22+-ForegroundColor+Cyan%0D%0A++++%24proc+%3D+Start-Process+%24hdInstaller+-ArgumentList+%22%2FVERYSILENT%22%2C+%22%2FSUPPRESSMSGBOXES%22%2C+%22%2FNORESTART%22%2C+%22%2FIACCEPTTHEAGREEMENT%22+-PassThru%0D%0A++++%24proc.WaitForExit%2830000%29%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+7.+COPY+%26+INSTALL+OFFICE+2021%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%24officeUsbSource+++%3D+Join-Path+%24usb+%22Office2021%22%0D%0A%24officeDesktopDest+%3D+Join-Path+%24desktopPath+%22Office2021%22%0D%0A%24officeInstaller+++%3D+Join-Path+%24officeDesktopDest+%22install.exe%22%0D%0A%0D%0A%24wordPath++%3D+%22C%3A%5CProgram+Files%5CMicrosoft+Office%5Croot%5COffice16%5CWINWORD.EXE%22%0D%0A%24excelPath+%3D+%22C%3A%5CProgram+Files%5CMicrosoft+Office%5Croot%5COffice16%5CEXCEL.EXE%22%0D%0A%0D%0Aif+%28%21%28Test-Path+%24wordPath%29%29+%7B%0D%0A++++if+%28Test-Path+%24officeUsbSource%29+%7B%0D%0A++++++++Write-Host+%22%5B*%5D+Copying+Office+2021+to+Desktop...%22+-ForegroundColor+Cyan%0D%0A++++++++Copy-Item+-Path+%24officeUsbSource+-Destination+%24desktopPath+-Recurse+-Force%0D%0A++++++++%0D%0A++++++++if+%28Test-Path+%24officeInstaller%29+%7B%0D%0A++++++++++++Write-Host+%22%5B*%5D+Installing+Microsoft+Office+2021+from+Desktop...%22+-ForegroundColor+Cyan%0D%0A++++++++++++%23+Launch+the+installer%2C+but+DO+NOT+forcefully+kill+the+background+processes+afterwards%21%0D%0A++++++++++++Start-Process+%24officeInstaller+-ArgumentList+%22%2Fquiet%22%2C+%22%2Fnorestart%22%0D%0A++++++++%7D+else+%7B%0D%0A++++++++++++Write-Host+%22%5B%21%5D+ERROR%3A+Office+installer+not+found+on+Desktop+after+copy%21%22+-ForegroundColor+Red%0D%0A++++++++%7D%0D%0A++++%7D+else+%7B%0D%0A++++++++Write-Host+%22%5B%21%5D+ERROR%3A+Office2021+folder+not+found+on+USB%21%22+-ForegroundColor+Red%0D%0A++++%7D%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%5B%2B%5D+Office+is+already+installed.+Skipping+copy+and+install.%22+-ForegroundColor+Green%0D%0A%7D%0D%0A%0D%0A%23+Office+Verification+Watchdog+%2810+min%29%0D%0AWrite-Host+%22%5B*%5D+Searching+for+Office+files+%2810+min+watchdog%29...%22+-ForegroundColor+Yellow%0D%0A%24timer+%3D+%5BSystem.Diagnostics.Stopwatch%5D%3A%3AStartNew%28%29%0D%0A%24found+%3D+%24false%0D%0A%0D%0Awhile+%28%24timer.Elapsed.TotalMinutes+-lt+10%29+%7B%0D%0A++++if+%28%28Test-Path+%24wordPath%29+-or+%28Test-Path+%24excelPath%29%29+%7B%0D%0A++++++++Write-Host+%22%60n%5B%2B%5D+Office+files+found%21+Proceeding+to+activation...%22+-ForegroundColor+Green%0D%0A++++++++%24found+%3D+%24true%0D%0A++++++++break%0D%0A++++%7D%0D%0A++++Write-Host+%22.%22+-NoNewline%0D%0A++++Start-Sleep+-Seconds+10%0D%0A%7D%0D%0A%24timer.Stop%28%29%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+8.+OFFICE+ACTIVATION+%28waits+3+minutes+after+Office+files+are+found%29%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0Aif+%28%24found%29+%7B%0D%0A++++Write-Host+%22%5B%2B%5D+Office+found.+Waiting+3+minutes+before+activation...%22+-ForegroundColor+Yellow%0D%0A++++for+%28%24i+%3D+180%3B+%24i+-gt+0%3B+%24i%2D%2D%29+%7B%0D%0A++++++++Write-Host+%22%60r++++Time+remaining%3A+%24%28%5Bmath%5D%3A%3AFloor%28%24i%2F60%29%29m+%24%28%24i+%25+60%29s++%22+-NoNewline%0D%0A++++++++Start-Sleep+-Seconds+1%0D%0A++++%7D%0D%0A++++Write-Host+%22%60n%5B*%5D+Downloading+MAS+Office+Activator...%22+-ForegroundColor+Cyan%0D%0A%0D%0A++++%23+Check+internet+before+downloading%0D%0A++++%24netReady+%3D+%24false%0D%0A++++for+%28%24i+%3D+1%3B+%24i+-le+10%3B+%24i%2B%2B%29+%7B%0D%0A++++++++if+%28Test-Connection+-ComputerName+8.8.8.8+-Count+1+-Quiet%29+%7B+%24netReady+%3D+%24true%3B+break+%7D%0D%0A++++++++Write-Host+%22++++Waiting+for+internet...+%28%24i%2F10%29%22+-ForegroundColor+Yellow%0D%0A++++++++Start-Sleep+-Seconds+5%0D%0A++++%7D%0D%0A%0D%0A++++if+%28-not+%24netReady%29+%7B%0D%0A++++++++Write-Host+%22%5B%21%5D+No+internet.+Skipping+Office+activation.%22+-ForegroundColor+Red%0D%0A++++%7D+else+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%24officeUrl++%3D+%22https%3A%2F%2Fraw.githubusercontent.com%2Fmassgravel%2FMicrosoft-Activation-Scripts%2Frefs%2Fheads%2Fmaster%2FMAS%2FSeparate-Files-Version%2FActivators%2FOhook_Activation_AIO.cmd%22%0D%0A++++++++++++%24officeTmp++%3D+%22%24env%3ATEMP%5COffice_Ohook_Activation.cmd%22%0D%0A++++++++++++Invoke-WebRequest+-Uri+%24officeUrl+-OutFile+%24officeTmp+-UseBasicParsing+-ErrorAction+Stop%0D%0A++++++++++++Write-Host+%22%5B%2B%5D+Launching+Office+Activator+%28%2FOhook%29...%22+-ForegroundColor+Green%0D%0A++++++++++++Start-Process+-FilePath+%22cmd.exe%22+-ArgumentList+%22%2Fc+%60%22%24officeTmp%60%22+%2FOhook%22+-Wait+-WindowStyle+Normal%0D%0A++++++++++++Remove-Item+-Path+%24officeTmp+-Force+-ErrorAction+SilentlyContinue%0D%0A++++++++++++Write-Host+%22%5B%2B%5D+Office+activation+completed.%22+-ForegroundColor+Green%0D%0A++++++++%7D+catch+%7B%0D%0A++++++++++++Write-Host+%22%5B%21%5D+Office+activation+download+failed%3A+%24_%22+-ForegroundColor+Red%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0A%23+9.+WINDOWS+ACTIVATION+%28MAS+HWID%29%0D%0A%23+%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%0D%0AWrite-Host+%22Verifying+Windows+Activation...%22+-ForegroundColor+Cyan%0D%0A%0D%0A%23+Collect+all+matching+license+objects+and+check+if+any+is+activated+%28LicenseStatus+%3D+1%29%0D%0A%24LicenseObjects+%3D+Get-CimInstance+-ClassName+SoftwareLicensingProduct+-Filter+%22PartialProductKey+IS+NOT+NULL%22+%7C%0D%0A++++Where-Object+%7B+%24_.ApplicationID+-eq+%2755c28233-d71d-4411-8190-76544a4cbd42%27+%7D%0D%0A%0D%0A%24IsActivated+%3D+%28%24LicenseObjects+%7C+Where-Object+%7B+%24_.LicenseStatus+-eq+1+%7D%29.Count+-gt+0%0D%0A%0D%0Aif+%28%24IsActivated%29+%7B%0D%0A++++Write-Host+%22%5B%2B%5D+Windows+is+already+activated.+Skipping.%22+-ForegroundColor+Green%0D%0A%7D+else+%7B%0D%0A++++Write-Host+%22%5B*%5D+Windows+is+not+activated.+Running+MAS+HWID...%22+-ForegroundColor+Cyan%0D%0A%0D%0A++++%23+Make+sure+internet+is+available+before+attempting+download%0D%0A++++%24netReady+%3D+%24false%0D%0A++++for+%28%24i+%3D+1%3B+%24i+-le+10%3B+%24i%2B%2B%29+%7B%0D%0A++++++++if+%28Test-Connection+-ComputerName+8.8.8.8+-Count+1+-Quiet%29+%7B+%24netReady+%3D+%24true%3B+break+%7D%0D%0A++++++++Write-Host+%22++++Waiting+for+internet+before+activation...+%28%24i%2F10%29%22+-ForegroundColor+Yellow%0D%0A++++++++Start-Sleep+-Seconds+5%0D%0A++++%7D%0D%0A%0D%0A++++if+%28-not+%24netReady%29+%7B%0D%0A++++++++Write-Host+%22%5B%21%5D+No+internet+connection.+Skipping+Windows+activation.%22+-ForegroundColor+Red%0D%0A++++%7D+else+%7B%0D%0A++++++++try+%7B%0D%0A++++++++++++%24url+++++%3D+%22https%3A%2F%2Fraw.githubusercontent.com%2Fmassgravel%2FMicrosoft-Activation-Scripts%2Frefs%2Fheads%2Fmaster%2FMAS%2FSeparate-Files-Version%2FActivators%2FHWID_Activation.cmd%22%0D%0A++++++++++++%24tempCmd+%3D+%22%24env%3ATEMP%5CHWID_Activation.cmd%22%0D%0A++++++++++++Invoke-WebRequest+-Uri+%24url+-OutFile+%24tempCmd+-UseBasicParsing+-ErrorAction+Stop%0D%0A++++++++++++%24MASProcess+%3D+%27echo.+%7C+%22%27+%2B+%24tempCmd+%2B+%27%22+%2FHWID%27%0D%0A++++++++++++Start-Process+-FilePath+%22cmd.exe%22+-ArgumentList+%22%2Fc+%24MASProcess%22+-Wait+-Verb+RunAs%0D%0A++++++++++++Remove-Item+-Path+%24tempCmd+-Force+-ErrorAction+SilentlyContinue%0D%0A++++++++++++Write-Host+%22%5B%2B%5D+MAS+activation+completed.%22+-ForegroundColor+Green%0D%0A++++++++%7D+catch+%7B%0D%0A++++++++++++Write-Host+%22%5B%21%5D+Activation+download+failed%3A+%24_%22+-ForegroundColor+Red%0D%0A++++++++%7D%0D%0A++++%7D%0D%0A%7D%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+10.+CREATE+STAGE+2+SCRIPT+ON+DISK%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%24Stage2Dir++%3D+%22C%3A%5CWindows%5CSetup%5CScripts%22%0D%0A%24Stage2Path+%3D+%22%24Stage2Dir%5CStage2_Update.ps1%22%0D%0A%0D%0Aif+%28%21%28Test-Path+%24Stage2Dir%29%29+%7B%0D%0A++++New-Item+-ItemType+Directory+-Path+%24Stage2Dir+-Force+%7C+Out-Null%0D%0A%7D%0D%0A%0D%0A%23+Written+as+a+literal+here-string+so+no+variables+expand+prematurely%0D%0A%24Stage2Content+%3D+%40%27%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+STAGE+2+-+WINDOWS+UPDATE+ENGINE%0D%0A%23+Persists+via+RunOnce+on+every+reboot+until+all+updates+are+complete.%0D%0A%23+Destroys+itself+when+done.%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%0D%0A%23+SELF-ELEVATION%0D%0Aif+%28%21%28%5BSecurity.Principal.WindowsPrincipal%5D%5BSecurity.Principal.WindowsIdentity%5D%3A%3AGetCurrent%28%29%29.IsInRole%28%5BSecurity.Principal.WindowsBuiltInRole%5D%3A%3AAdministrator%29%29+%7B%0D%0A++++Start-Process+powershell.exe+%22-NoProfile+-ExecutionPolicy+Bypass+-File+%60%22%24PSCommandPath%60%22%22+-Verb+RunAs%0D%0A++++exit%0D%0A%7D%0D%0A%0D%0A%24MyPath+%3D+%24MyInvocation.MyCommand.Path%0D%0A%0D%0A%23+Disable+QuickEdit+mode+so+clicking+the+window+never+freezes+the+script%0D%0Atry+%7B%0D%0A++++%24RegPath+%3D+%22HKCU%3A%5CConsole%22%0D%0A++++Set-ItemProperty+-Path+%24RegPath+-Name+%22QuickEdit%22+-Value+0+-ErrorAction+SilentlyContinue%0D%0A++++%23+Also+disable+it+for+the+current+session+via+Win32+API%0D%0A++++%24code+%3D+%22using+System%3B+using+System.Runtime.InteropServices%3B%22+%2B%0D%0A++++++++++++%22public+class+ConsoleHelper+%7B%22+%2B%0D%0A++++++++++++%22++++%5BDllImport%28%60%22kernel32.dll%60%22%29%5D+public+static+extern+System.IntPtr+GetStdHandle%28int+n%29%3B%22+%2B%0D%0A++++++++++++%22++++%5BDllImport%28%60%22kernel32.dll%60%22%29%5D+public+static+extern+bool+GetConsoleMode%28System.IntPtr+h%2C+out+uint+m%29%3B%22+%2B%0D%0A++++++++++++%22++++%5BDllImport%28%60%22kernel32.dll%60%22%29%5D+public+static+extern+bool+SetConsoleMode%28System.IntPtr+h%2C+uint+m%29%3B%22+%2B%0D%0A++++++++++++%22%7D%22%0D%0A++++Add-Type+-TypeDefinition+%24code+-ErrorAction+SilentlyContinue%0D%0A++++%24handle+%3D+%5BConsoleHelper%5D%3A%3AGetStdHandle%28-10%29+%23+STD_INPUT_HANDLE%0D%0A++++%24mode+++%3D+0%0D%0A++++%5BConsoleHelper%5D%3A%3AGetConsoleMode%28%24handle%2C+%5Bref%5D%24mode%29+%7C+Out-Null%0D%0A++++%24mode+%3D+%24mode+-band+%28-bnot+0x0040%29+%23+Remove+ENABLE_QUICK_EDIT_MODE+flag%0D%0A++++%5BConsoleHelper%5D%3A%3ASetConsoleMode%28%24handle%2C+%24mode%29+%7C+Out-Null%0D%0A%7D+catch+%7B+%3C%23+Non-critical%2C+continue+anyway+%23%3E+%7D%0D%0A%0D%0A%23+RE-REGISTER+IN+RUNONCE+%28so+we+survive+the+next+reboot+if+needed%29%0D%0A%24RunOnceValue+%3D+%22powershell.exe+-NoProfile+-ExecutionPolicy+Bypass+-File+%60%22%24MyPath%60%22%22%0D%0ASet-ItemProperty+-Path+%22HKLM%3A%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CRunOnce%22+-Name+%22Stage2_Update%22+-Value+%24RunOnceValue%0D%0AWrite-Host+%22%5B%2B%5D+RunOnce+re-registered.+Will+resume+after+reboot+if+needed.%22+-ForegroundColor+Cyan%0D%0A%0D%0A%23+ENSURE+PSWindowsUpdate+IS+AVAILABLE%0D%0ASet-ExecutionPolicy+-ExecutionPolicy+Bypass+-Scope+Process+-Force%0D%0Aif+%28-not+%28Get-Module+-ListAvailable+-Name+PSWindowsUpdate%29%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Installing+PSWindowsUpdate+module...%22+-ForegroundColor+Cyan%0D%0A++++Install-PackageProvider+-Name+NuGet+-MinimumVersion+2.8.5.201+-Force%0D%0A++++Set-PSRepository+-Name+%27PSGallery%27+-InstallationPolicy+Trusted%0D%0A++++Install-Module+-Name+PSWindowsUpdate+-Force+-Confirm%3A%24false%0D%0A%7D%0D%0AGet-ChildItem+-Path+%22%24env%3AProgramFiles%5CWindowsPowerShell%5CModules%5CPSWindowsUpdate%22+-Recurse+%7C+Unblock-File%0D%0AImport-Module+PSWindowsUpdate+-Force%0D%0A%0D%0A%23+RUN+WINDOWS+UPDATES+%28with+5+minute+timeout%29%0D%0AWrite-Host+%22%5B*%5D+Checking+for+Windows+Updates+%285+min+timeout%29...%22+-ForegroundColor+Cyan%0D%0A%24updatesFound+%3D+%24false%0D%0Atry+%7B%0D%0A++++%24updateJob+%3D+Start-Job+-ScriptBlock+%7B%0D%0A++++++++Import-Module+PSWindowsUpdate+-Force%0D%0A++++++++Get-WindowsUpdate+-AcceptAll+-Install+-AutoReboot+-Confirm%3A%24false+-ErrorAction+Stop%0D%0A++++%7D%0D%0A%0D%0A++++%23+Wait+up+to+5+minutes+for+the+job+to+return+results%0D%0A++++%24completed+%3D+Wait-Job+-Job+%24updateJob+-Timeout+300%0D%0A%0D%0A++++if+%28%24completed%29+%7B%0D%0A++++++++%24jobResult+%3D+Receive-Job+-Job+%24updateJob+-ErrorAction+SilentlyContinue%0D%0A++++++++if+%28%24jobResult%29+%7B+%24updatesFound+%3D+%24true+%7D%0D%0A++++%7D+else+%7B%0D%0A++++++++%23+Job+timed+out+after+5+min+-+updates+may+be+installing+in+background%2C+let+it+run%0D%0A++++++++Write-Host+%22%5B*%5D+Update+check+timed+out+after+5+min+-+updates+may+be+running+in+background.%22+-ForegroundColor+Yellow%0D%0A++++++++%24updatesFound+%3D+%24true%0D%0A++++%7D%0D%0A++++Remove-Job+-Job+%24updateJob+-Force+-ErrorAction+SilentlyContinue%0D%0A%0D%0A%7D+catch+%7B%0D%0A++++Write-Host+%22%5B%21%5D+Update+error+encountered.+Repairing+Windows+Update+service...%22+-ForegroundColor+Yellow%0D%0A++++Stop-Service+-Name+wuauserv%2C+bits+-Force%0D%0A++++Remove-Item+-Path+%22%24env%3AWinDir%5CSoftwareDistribution%22+-Recurse+-Force+-ErrorAction+SilentlyContinue%0D%0A++++Start-Service+-Name+wuauserv%2C+bits%0D%0A++++Write-Host+%22%5B*%5D+Rebooting+to+retry...%22+-ForegroundColor+Yellow%0D%0A++++Restart-Computer+-Force%0D%0A++++exit%0D%0A%7D%0D%0A%0D%0A%23+If+updates+were+found%2Finstalled%2C+let+AutoReboot+handle+the+reboot%0D%0Aif+%28%24updatesFound%29+%7B%0D%0A++++Write-Host+%22%5B*%5D+Updates+were+found%2Finstalled.+Waiting+for+reboot...%22+-ForegroundColor+Yellow%0D%0A++++Start-Sleep+-Seconds+60%0D%0A++++Restart-Computer+-Force%0D%0A++++exit%0D%0A%7D%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+NO+UPDATES+FOUND+-+CONFIRM+FOR+10+MINUTES+BEFORE+SELF-DESTRUCT%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0AWrite-Host+%22%5B*%5D+No+updates+found.+Confirming+for+10+minutes+before+finalizing...%22+-ForegroundColor+Cyan%0D%0A%0D%0A%24confirmClean+%3D+%24true%0D%0A%24checkInterval+%3D+60+++%23+check+every+60+seconds%0D%0A%24totalChecks+++%3D+10+++%23+10+checks+%3D+10+minutes%0D%0A%0D%0Afor+%28%24i+%3D+1%3B+%24i+-le+%24totalChecks%3B+%24i%2B%2B%29+%7B%0D%0A++++Write-Host+%22++++Confirmation+check+%24i%2F%24totalChecks+-+waiting+60+seconds...%22+-ForegroundColor+Cyan%0D%0A++++Start-Sleep+-Seconds+%24checkInterval%0D%0A%0D%0A++++%23+Check+for+any+pending+updates%0D%0A++++%24pendingUpdates+%3D+Get-WindowsUpdate+-ErrorAction+SilentlyContinue%0D%0A++++%24rebootStatus+++%3D+Get-WURebootStatus+-ErrorAction+SilentlyContinue%0D%0A++++%24rebootPending++%3D+%28%24rebootStatus.RebootRequired+-eq+%24true%29%0D%0A%0D%0A++++if+%28%24pendingUpdates%29+%7B%0D%0A++++++++Write-Host+%22++++%5B%21%5D+Updates+appeared+during+confirmation.+Restarting+update+cycle...%22+-ForegroundColor+Yellow%0D%0A++++++++%24confirmClean+%3D+%24false%0D%0A++++++++Restart-Computer+-Force%0D%0A++++++++exit%0D%0A++++%7D%0D%0A%0D%0A++++if+%28%24rebootPending%29+%7B%0D%0A++++++++Write-Host+%22++++%5B%21%5D+Reboot+required+detected.+Rebooting...%22+-ForegroundColor+Yellow%0D%0A++++++++Restart-Computer+-Force%0D%0A++++++++exit%0D%0A++++%7D%0D%0A%0D%0A++++Write-Host+%22++++%5B%2B%5D+Check+%24i%2F%24totalChecks+passed+-+no+updates%2C+no+reboot+pending.%22+-ForegroundColor+Green%0D%0A%7D%0D%0A%0D%0Aif+%28-not+%24confirmClean%29+%7B+exit+%7D%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+ALL+CLEAR+-+SELF-DESTRUCT%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0AWrite-Host+%22%60n%5B%2B%5D+10+minute+confirmation+passed.+System+is+fully+updated.%22+-ForegroundColor+Green%0D%0A%0D%0A%23+Remove+RunOnce+entry+so+we+never+run+again%0D%0ARemove-ItemProperty+-Path+%22HKLM%3A%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CRunOnce%22+-Name+%22Stage2_Update%22+-ErrorAction+SilentlyContinue%0D%0A%0D%0A%23+Disable+Auto-Login%0D%0A%24Winlogon+%3D+%22HKLM%3A%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CWinlogon%22%0D%0ASet-ItemProperty++++-Path+%24Winlogon+-Name+%22AutoAdminLogon%22+-Value+%220%22%0D%0ARemove-ItemProperty+-Path+%24Winlogon+-Name+%22AutoLogonCount%22+-ErrorAction+SilentlyContinue%0D%0A%0D%0AWrite-Host+%22%5B%2B%5D+Auto-login+disabled.%22+-ForegroundColor+Green%0D%0A%0D%0A%23+Show+completion+message+to+the+user%0D%0AAdd-Type+-AssemblyName+System.Windows.Forms%0D%0A%24msg+%3D+%22System+Setup+Complete%21%60n%60nAll+Windows+Updates+have+been+installed+successfully.%60nThis+machine+is+fully+configured+and+ready+for+use.%60n%60nDeveloped+by%3A+Rakhshan+Ali%60nEverything+is+open-source%21%60nGitHub%3A+https%3A%2F%2Fgithub.com%2FRakhshan7070%2Fa_and_t_services%22%0D%0A%5BSystem.Windows.Forms.MessageBox%5D%3A%3AShow%28%0D%0A++++%24msg%2C%0D%0A++++%22IT+Deployment+-+Complete%22%2C%0D%0A++++%5BSystem.Windows.Forms.MessageBoxButtons%5D%3A%3AOK%2C%0D%0A++++%5BSystem.Windows.Forms.MessageBoxIcon%5D%3A%3AInformation%0D%0A%29+%7C+Out-Null%0D%0A%0D%0A%23+Delete+this+script+from+disk%0D%0ARemove-Item+-Path+%24MyPath+-Force%0D%0A%27%40%0D%0A%0D%0A%24Stage2Content+%7C+Out-File+-FilePath+%24Stage2Path+-Encoding+UTF8+-Force%0D%0AWrite-Host+%22%5B%2B%5D+Stage+2+script+written+to%3A+%24Stage2Path%22+-ForegroundColor+Green%0D%0A%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%23+11.+REGISTER+STAGE+2+IN+RUNONCE+%26+REBOOT%0D%0A%23+%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%24RegValue+%3D+%22powershell.exe+-NoProfile+-ExecutionPolicy+Bypass+-File+%60%22%24Stage2Path%60%22%22%0D%0ASet-ItemProperty+-Path+%22HKLM%3A%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CRunOnce%22+-Name+%22Stage2_Update%22+-Value+%24RegValue%0D%0A%0D%0AWrite-Host+%22%60n%5B%2B%5D+Stage+1+complete.+Handing+off+to+Stage+2+Update+Engine+on+next+boot.%22+-ForegroundColor+Green%0D%0AWrite-Host+%22%5B*%5D+Rebooting+in+5+seconds...%22+-ForegroundColor+Yellow%0D%0AStart-Sleep+-Seconds+5%0D%0ARestart-Computer+-Force&FirstLogonScriptType0=Ps1&WdacMode=Skip&AppLockerMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-Setup" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Set keyboard layout&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:@for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do @()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@echo off&amp;echo:call :print ^"Setting keyboard layout for PE session^"&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do ()</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
@@ -26,11 +27,11 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>6</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@if not defined IMAGE_FILE echo Could not locate install.wim, install.esd or install.swm. ^&amp; pause ^&amp; exit /b 1&amp;echo:@if not defined XML_FILE echo Could not locate autounattend.xml. ^&amp; pause ^&amp; exit /b 1)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if not defined IMAGE_FILE call :fail ^"Could not locate install.wim, install.esd or install.swm.^"&amp;echo:if not defined XML_FILE call :fail ^"Could not locate autounattend.xml.^"&amp;echo:set ^"OS_VERSION=11^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>7</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"OS_VERSION=11^"&amp;echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:rem Install drivers from $WinPEDriver$ folder&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Loading drivers from $WinPEDriver$ folder^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>8</Order>
@@ -46,34 +47,42 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>11</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:diskpart.exe /s X:\diskpart.txt ^|^| ( echo diskpart.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:call :print ^"diskpart will now partition and format your disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>12</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^")</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:diskpart.exe /s X:\diskpart.txt ^|^| call :fail ^"diskpart.exe encountered an error.^"&amp;echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^"&amp;echo:call :print ^"Applying Windows image to target disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>13</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| ( echo dism.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| call :fail ^"dism.exe encountered an error.^"&amp;echo:call :print ^"Making system partition bootable^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>14</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| ( echo bcdboot.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^)&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| call :fail ^"bcdboot.exe encountered an error.^"&amp;echo:call :print ^"Copying answer file to target disk^"&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>15</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^)&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:rem Set device setup region to India (GeoID 113^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Adding drivers from $WinPEDriver$ folder to new installation^"&amp;echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^))</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>16</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Setting time zone^"&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:call :print ^"Setting device setup region to India (GeoID 113^)^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>17</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Continue with next stage of Windows Setup after reboot&amp;echo:wpeutil.exe reboot)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>18</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Computer will now reboot^"&amp;echo:wpeutil.exe reboot&amp;echo:goto :eof&amp;echo::fail&amp;echo:echo:&amp;echo:echo:Fatal error: ^%~1&amp;echo:echo:&amp;echo:pause&amp;echo:exit 1&amp;echo::print&amp;echo:echo:&amp;echo:echo:*** ^%~1 ***&amp;echo:echo:)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>19</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:goto :eof)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>20</Order>
 					<Path>cmd.exe /c "X:\pe.cmd"</Path>
 				</RunSynchronousCommand>
 			</RunSynchronous>
@@ -82,7 +91,7 @@
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Set keyboard layout&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:@for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do @()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@echo off&amp;echo:call :print ^"Setting keyboard layout for PE session^"&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do ()</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
@@ -102,11 +111,11 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>6</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@if not defined IMAGE_FILE echo Could not locate install.wim, install.esd or install.swm. ^&amp; pause ^&amp; exit /b 1&amp;echo:@if not defined XML_FILE echo Could not locate autounattend.xml. ^&amp; pause ^&amp; exit /b 1)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if not defined IMAGE_FILE call :fail ^"Could not locate install.wim, install.esd or install.swm.^"&amp;echo:if not defined XML_FILE call :fail ^"Could not locate autounattend.xml.^"&amp;echo:set ^"OS_VERSION=11^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>7</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"OS_VERSION=11^"&amp;echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:rem Install drivers from $WinPEDriver$ folder&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Loading drivers from $WinPEDriver$ folder^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>8</Order>
@@ -122,34 +131,42 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>11</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:diskpart.exe /s X:\diskpart.txt ^|^| ( echo diskpart.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:call :print ^"diskpart will now partition and format your disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>12</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^")</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:diskpart.exe /s X:\diskpart.txt ^|^| call :fail ^"diskpart.exe encountered an error.^"&amp;echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^"&amp;echo:call :print ^"Applying Windows image to target disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>13</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| ( echo dism.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| call :fail ^"dism.exe encountered an error.^"&amp;echo:call :print ^"Making system partition bootable^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>14</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| ( echo bcdboot.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^)&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| call :fail ^"bcdboot.exe encountered an error.^"&amp;echo:call :print ^"Copying answer file to target disk^"&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>15</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^)&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:rem Set device setup region to India (GeoID 113^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Adding drivers from $WinPEDriver$ folder to new installation^"&amp;echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^))</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>16</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Setting time zone^"&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:call :print ^"Setting device setup region to India (GeoID 113^)^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>17</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Continue with next stage of Windows Setup after reboot&amp;echo:wpeutil.exe reboot)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>18</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Computer will now reboot^"&amp;echo:wpeutil.exe reboot&amp;echo:goto :eof&amp;echo::fail&amp;echo:echo:&amp;echo:echo:Fatal error: ^%~1&amp;echo:echo:&amp;echo:pause&amp;echo:exit 1&amp;echo::print&amp;echo:echo:&amp;echo:echo:*** ^%~1 ***&amp;echo:echo:)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>19</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:goto :eof)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>20</Order>
 					<Path>cmd.exe /c "X:\pe.cmd"</Path>
 				</RunSynchronousCommand>
 			</RunSynchronous>
@@ -158,7 +175,7 @@
 			<RunSynchronous>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Set keyboard layout&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:@for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do @()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@echo off&amp;echo:call :print ^"Setting keyboard layout for PE session^"&amp;echo:wpeutil.exe SetKeyboardLayout 4009:00004009&amp;echo:for ^%^%d in (C D E F G H I J K L M N O P Q T U V X Y Z^) do ()</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>2</Order>
@@ -178,11 +195,11 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>6</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:@if not defined IMAGE_FILE echo Could not locate install.wim, install.esd or install.swm. ^&amp; pause ^&amp; exit /b 1&amp;echo:@if not defined XML_FILE echo Could not locate autounattend.xml. ^&amp; pause ^&amp; exit /b 1)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if not defined IMAGE_FILE call :fail ^"Could not locate install.wim, install.esd or install.swm.^"&amp;echo:if not defined XML_FILE call :fail ^"Could not locate autounattend.xml.^"&amp;echo:set ^"OS_VERSION=11^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>7</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"OS_VERSION=11^"&amp;echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:rem Install drivers from $WinPEDriver$ folder&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:for /f ^"tokens=3 delims=.^" ^%^%v in ('ver'^) do (&amp;echo:if ^%^%v LSS 20000 set ^"OS_VERSION=10^"&amp;echo:^)&amp;echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Loading drivers from $WinPEDriver$ folder^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>8</Order>
@@ -198,34 +215,42 @@
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>11</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:diskpart.exe /s X:\diskpart.txt ^|^| ( echo diskpart.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:echo:SET ID=^^^"de94bba4-06d1-4d40-a16a-bfd50179d6ac^^^"&amp;echo:echo:GPT ATTRIBUTES=0x8000000000000001&amp;echo:^)&amp;echo:call :print ^"diskpart will now partition and format your disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>12</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^")</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:diskpart.exe /s X:\diskpart.txt ^|^| call :fail ^"diskpart.exe encountered an error.^"&amp;echo:set ^"IMG_PARAM=/Name:^"Windows ^%OS_VERSION^% Pro^"^"&amp;echo:call :print ^"Applying Windows image to target disk^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>13</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| ( echo dism.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Apply-Image /ImageFile:^%IMAGE_FILE^% ^%SWM_PARAM^% ^%IMG_PARAM^% /ApplyDir:W:\ /CheckIntegrity /Verify ^|^| call :fail ^"dism.exe encountered an error.^"&amp;echo:call :print ^"Making system partition bootable^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>14</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| ( echo bcdboot.exe encountered an error. ^&amp; pause ^&amp; exit /b 1 ^)&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml&amp;echo:if defined PEDRIVERS_FOLDER ()</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:bcdboot.exe W:\Windows /s S: ^|^| call :fail ^"bcdboot.exe encountered an error.^"&amp;echo:call :print ^"Copying answer file to target disk^"&amp;echo:mkdir W:\Windows\Panther&amp;echo:copy ^%XML_FILE^% W:\Windows\Panther\unattend.xml)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>15</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^)&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:rem Set device setup region to India (GeoID 113^))</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:if defined PEDRIVERS_FOLDER (&amp;echo:call :print ^"Adding drivers from $WinPEDriver$ folder to new installation^"&amp;echo:dism.exe /Add-Driver /Image:W:\ /Driver:^"^%PEDRIVERS_FOLDER^%^" /Recurse&amp;echo:^))</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>16</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Setting time zone^"&amp;echo:dism.exe /Image:W:\ /Set-TimeZone:^"India Standard Time^"&amp;echo:call :print ^"Setting device setup region to India (GeoID 113^)^")</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>17</Order>
-					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:rem Continue with next stage of Windows Setup after reboot&amp;echo:wpeutil.exe reboot)</Path>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:reg.exe LOAD HKLM\mount W:\Windows\System32\config\SOFTWARE&amp;echo:reg.exe ADD ^"HKLM\mount\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion^" /v DeviceRegion /t REG_DWORD /d 113 /f&amp;echo:reg.exe UNLOAD HKLM\mount)</Path>
 				</RunSynchronousCommand>
 				<RunSynchronousCommand wcm:action="add">
 					<Order>18</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:call :print ^"Computer will now reboot^"&amp;echo:wpeutil.exe reboot&amp;echo:goto :eof&amp;echo::fail&amp;echo:echo:&amp;echo:echo:Fatal error: ^%~1&amp;echo:echo:&amp;echo:pause&amp;echo:exit 1&amp;echo::print&amp;echo:echo:&amp;echo:echo:*** ^%~1 ***&amp;echo:echo:)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>19</Order>
+					<Path>cmd.exe /c &gt;&gt;X:\pe.cmd (echo:goto :eof)</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>20</Order>
 					<Path>cmd.exe /c "X:\pe.cmd"</Path>
 				</RunSynchronousCommand>
 			</RunSynchronous>
@@ -445,8 +470,8 @@
 	<Extensions xmlns="https://schneegans.de/windows/unattend-generator/">
 		<Build>
 			<Commit>
-				<Hash>ac01d8acdb769b86decbb4b0b80726aed546fd25</Hash>
-				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/ac01d8acdb769b86decbb4b0b80726aed546fd25</GitHubUrl>
+				<Hash>3067ee0fd3cc3fdd956bf88d16cff21b0dfea16f</Hash>
+				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/3067ee0fd3cc3fdd956bf88d16cff21b0dfea16f</GitHubUrl>
 			</Commit>
 		</Build>
 		<ExtractScript>
@@ -550,20 +575,20 @@ if ($targetSizeGB -gt 0 -and !(Get-Volume -FileSystemLabel "Data" -ErrorAction S
 # ------------------------------------------------------------------------------
 # 3. DYNAMIC USB DETECTION
 # ------------------------------------------------------------------------------
-$usbDrive = Get-WmiObject Win32_Volume | Where-Object { $_.Label -eq "WINDOWS_10" }
+$usbDrive = Get-WmiObject Win32_Volume | Where-Object { $_.Label -eq "WINDOWS_11" }
 if ($usbDrive) {
     $usb = $usbDrive.Name
     Write-Host "[+] Found USB Drive at $usb" -ForegroundColor Green
 } else {
-    Write-Host "[!] ERROR: USB labeled 'WINDOWS_10' not found!" -ForegroundColor Red
+    Write-Host "[!] ERROR: USB labeled 'WINDOWS_11' not found!" -ForegroundColor Red
     Pause; exit
 }
 
 # ------------------------------------------------------------------------------
-# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP
+# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP (WIN 11 ONLY)
 # ------------------------------------------------------------------------------
 $desktopPath = "$env:PUBLIC\Desktop"
-$assetName   = if ($usbLabel -eq "WINDOWS_11") { "win_11" } else { "win_10" }
+$assetName   = "win_11"
 $assetSource = Join-Path $usb $assetName
 $assetDest   = Join-Path $desktopPath $assetName
 
@@ -613,17 +638,32 @@ if (Test-Path $hdInstaller) {
 }
 
 # ------------------------------------------------------------------------------
-# 7. INSTALL OFFICE 2019
+# 7. COPY &amp; INSTALL OFFICE 2021
 # ------------------------------------------------------------------------------
-$office = Join-Path $usb "Office2019\install.exe"
+$officeUsbSource   = Join-Path $usb "Office2021"
+$officeDesktopDest = Join-Path $desktopPath "Office2021"
+$officeInstaller   = Join-Path $officeDesktopDest "install.exe"
+
 $wordPath  = "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
 $excelPath = "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE"
 
-if (!(Test-Path $wordPath) -and (Test-Path $office)) {
-    Write-Host "[*] Installing Microsoft Office 2019..." -ForegroundColor Cyan
-    $proc = Start-Process $office -ArgumentList "/quiet", "/norestart" -PassThru
-    $proc | Wait-Process -Timeout 600 -ErrorAction SilentlyContinue
-    Get-Process "setup", "install", "OfficeClickToRun" -ErrorAction SilentlyContinue | Stop-Process -Force
+if (!(Test-Path $wordPath)) {
+    if (Test-Path $officeUsbSource) {
+        Write-Host "[*] Copying Office 2021 to Desktop..." -ForegroundColor Cyan
+        Copy-Item -Path $officeUsbSource -Destination $desktopPath -Recurse -Force
+        
+        if (Test-Path $officeInstaller) {
+            Write-Host "[*] Installing Microsoft Office 2021 from Desktop..." -ForegroundColor Cyan
+            # Launch the installer, but DO NOT forcefully kill the background processes afterwards!
+            Start-Process $officeInstaller -ArgumentList "/quiet", "/norestart"
+        } else {
+            Write-Host "[!] ERROR: Office installer not found on Desktop after copy!" -ForegroundColor Red
+        }
+    } else {
+        Write-Host "[!] ERROR: Office2021 folder not found on USB!" -ForegroundColor Red
+    }
+} else {
+    Write-Host "[+] Office is already installed. Skipping copy and install." -ForegroundColor Green
 }
 
 # Office Verification Watchdog (10 min)

@@ -50,20 +50,20 @@ if ($targetSizeGB -gt 0 -and !(Get-Volume -FileSystemLabel "Data" -ErrorAction S
 # ------------------------------------------------------------------------------
 # 3. DYNAMIC USB DETECTION
 # ------------------------------------------------------------------------------
-$usbDrive = Get-WmiObject Win32_Volume | Where-Object { $_.Label -eq "WINDOWS_10" }
+$usbDrive = Get-WmiObject Win32_Volume | Where-Object { $_.Label -eq "WINDOWS_11" }
 if ($usbDrive) {
     $usb = $usbDrive.Name
     Write-Host "[+] Found USB Drive at $usb" -ForegroundColor Green
 } else {
-    Write-Host "[!] ERROR: USB labeled 'WINDOWS_10' not found!" -ForegroundColor Red
+    Write-Host "[!] ERROR: USB labeled 'WINDOWS_11' not found!" -ForegroundColor Red
     Pause; exit
 }
 
 # ------------------------------------------------------------------------------
-# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP
+# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP (WIN 11 ONLY)
 # ------------------------------------------------------------------------------
 $desktopPath = "$env:PUBLIC\Desktop"
-$assetName   = if ($usbLabel -eq "WINDOWS_11") { "win_11" } else { "win_10" }
+$assetName   = "win_11"
 $assetSource = Join-Path $usb $assetName
 $assetDest   = Join-Path $desktopPath $assetName
 
@@ -113,17 +113,32 @@ if (Test-Path $hdInstaller) {
 }
 
 # ------------------------------------------------------------------------------
-# 7. INSTALL OFFICE 2019
+# 7. COPY & INSTALL OFFICE 2021
 # ------------------------------------------------------------------------------
-$office = Join-Path $usb "Office2019\install.exe"
+$officeUsbSource   = Join-Path $usb "Office2021"
+$officeDesktopDest = Join-Path $desktopPath "Office2021"
+$officeInstaller   = Join-Path $officeDesktopDest "install.exe"
+
 $wordPath  = "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
 $excelPath = "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE"
 
-if (!(Test-Path $wordPath) -and (Test-Path $office)) {
-    Write-Host "[*] Installing Microsoft Office 2019..." -ForegroundColor Cyan
-    $proc = Start-Process $office -ArgumentList "/quiet", "/norestart" -PassThru
-    $proc | Wait-Process -Timeout 600 -ErrorAction SilentlyContinue
-    Get-Process "setup", "install", "OfficeClickToRun" -ErrorAction SilentlyContinue | Stop-Process -Force
+if (!(Test-Path $wordPath)) {
+    if (Test-Path $officeUsbSource) {
+        Write-Host "[*] Copying Office 2021 to Desktop..." -ForegroundColor Cyan
+        Copy-Item -Path $officeUsbSource -Destination $desktopPath -Recurse -Force
+        
+        if (Test-Path $officeInstaller) {
+            Write-Host "[*] Installing Microsoft Office 2021 from Desktop..." -ForegroundColor Cyan
+            # Launch the installer, but DO NOT forcefully kill the background processes afterwards!
+            Start-Process $officeInstaller -ArgumentList "/quiet", "/norestart"
+        } else {
+            Write-Host "[!] ERROR: Office installer not found on Desktop after copy!" -ForegroundColor Red
+        }
+    } else {
+        Write-Host "[!] ERROR: Office2021 folder not found on USB!" -ForegroundColor Red
+    }
+} else {
+    Write-Host "[+] Office is already installed. Skipping copy and install." -ForegroundColor Green
 }
 
 # Office Verification Watchdog (10 min)
