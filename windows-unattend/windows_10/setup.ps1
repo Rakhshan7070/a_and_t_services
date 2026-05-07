@@ -48,10 +48,10 @@ if ($usbDrive) {
 }
 
 # ------------------------------------------------------------------------------
-# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP (WIN 10 ONLY)
+# 3.5 COPY OS-SPECIFIC ASSETS TO DESKTOP
 # ------------------------------------------------------------------------------
 $desktopPath = "$env:PUBLIC\Desktop"
-$assetName   = "win_10"
+$assetName   = "assets"
 $assetSource = Join-Path $usb $assetName
 $assetDest   = Join-Path $desktopPath $assetName
 
